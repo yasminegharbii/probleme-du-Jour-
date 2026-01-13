@@ -10,8 +10,6 @@
       example:
    ```sh
    git clone lien
-   ```
-   
    
 3. Ouvre le dépôt forké. Crée un remote local en utilisant :
 
