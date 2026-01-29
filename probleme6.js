@@ -5,7 +5,7 @@
 
 function factorielleN(n) {
     var results = 1
-    while (i < n) {
+    while (0 < n) {
         results  = results  * n
         n--
     }
