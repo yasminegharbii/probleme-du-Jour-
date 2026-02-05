@@ -2,7 +2,7 @@
 
 function removeByIndex(tableau, index) {
   var newt = [];
-  for (var i = 0; i < tableau.length; ) {
+  for (var i = 0; i < tableau.length; i++ ) {
     if (i !== index) {
       newt.push(tableau[i]);
     }
