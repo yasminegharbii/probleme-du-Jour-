@@ -54,14 +54,10 @@ function moyenne (num) {
 
 function agesEnMinutes (tabl) {
   return map(tabl, function (el) {
-    return {
-      {
-        nom: el.nom,
-        prenom: el.nom
-      }
-    age: el.age * 525600
+    return {...el,age: el.age * 525600 }
+ 
     }
-  })
+  )
 }
 //
 //  var personnes = [{
