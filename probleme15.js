@@ -29,7 +29,7 @@ var seauDeParesseux = [
 // et retourne le nom complet sous forme de chaîne de caractères
 // nomComplet(seauDeParesseux,0) //==> "Poilu Dangereux Assassin"
 function nomComplet(tableau, position) {
-  var people = tableau[position];
+  var people = tableau[position].nom;
   return (
     people.prenom + " " + people.deuxiemePrenom + " " + people.nomDeFamille
   );
@@ -58,7 +58,7 @@ function creerCamarades(nom, prenom, age, sexe) {
 }
 // - créer un tableau pour contenir les camarades que vous avez créés.
 var camarades = [
-creerCamarades("yas" , "jaz" , "50" , "M")
+creerCamarades("yas" , "jaz" , "50" , "M"),
 creerCamarades("kuromi" , "friends" , "111" , "F")
 ];
 // - écrire une fonction appelée afficherAmi qui prend un camarade en argument
