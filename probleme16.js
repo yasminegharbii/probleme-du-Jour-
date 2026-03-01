@@ -5,10 +5,8 @@
  Créez une fonction interne servirClient qui sert du café et des petits gâteaux au nombre de clients passé en paramètre.
 */
 function creerCafe(Cafe, Gateau) {
-  var numCafe = Cafe;
-  var numGateau = Gateau;
   return function servirClient(Clients) {
-    if (numGateau <= 0) {
+    if (Gateau <= 0) {
       return "Nous n'avons plus de petits gâteaux";
     }
     var serve = Clients;
@@ -22,7 +20,7 @@ function creerCafe(Cafe, Gateau) {
     Cafe = Cafe - serve;
     Gateau = Gateau - serve;
     return (
-      "Nous avons servi "+
+      "Nous avons servi " +
       serve +
       " clients et il reste" +
       Cafe +
